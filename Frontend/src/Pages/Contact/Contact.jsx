@@ -1,5 +1,5 @@
 import "./Contact.css";
-import contactImage from "../../assets/imgs/contact.svg";
+import contactImage from "../../assets/imgs/Contact.svg";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
