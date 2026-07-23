@@ -1,0 +1,15 @@
+.recent-activity{
+    margin-top:40px;
+}
+
+.section-heading{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.activity-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}

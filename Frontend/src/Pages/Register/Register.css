@@ -1,0 +1,96 @@
+@import "../Login/Login.css";
+
+.register-page{
+    min-height:100vh;
+    background:#FFF5F5;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 20px;
+}
+
+.register-container{
+    width:100%;
+    max-width:1100px;
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.register-left{
+    background:#FFEAEA;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.register-left img{
+    width:100%;
+    max-width:420px;
+}
+
+.register-right{
+    padding:50px 60px;
+}
+
+.register-btn{
+    width:100%;
+    padding:16px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#D32F2F;
+    color:white;
+
+    font-size:17px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.register-btn:hover{
+    background:#F44336;
+}
+
+.login-text{
+    margin-top:25px;
+    text-align:center;
+}
+
+.login-text a{
+    color:#D32F2F;
+    text-decoration:none;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+.register-container{
+    grid-template-columns:1fr;
+}
+
+.register-left{
+    display:none;
+}
+
+.register-right{
+    padding:40px 30px;
+}
+
+}

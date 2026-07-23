@@ -1,0 +1,139 @@
+
+ .donor-requests-page {
+    min-height: 100vh;
+    background: #FFF5F5;
+    padding: 40px 0;
+}
+
+.requests-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+.status{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.status.pending{
+
+    background:#FFF3CD;
+
+    color:#856404;
+}
+
+.status.accepted{
+
+    background:#D4EDDA;
+
+    color:#155724;
+}
+
+.status.completed{
+
+    background:#EDE9FE;
+
+    color:#6D28D9;
+}
+
+.status.rejected{
+
+    background:#F8D7DA;
+
+    color:#721C24;
+}
+
+.action-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.accept-btn,
+.reject-btn{
+
+    flex:1;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+}
+
+.accept-btn{
+
+    background:#16A34A;
+}
+
+.accept-btn:hover{
+
+    background:#15803D;
+}
+
+.reject-btn{
+
+    background:#DC2626;
+}
+
+.reject-btn:hover{
+
+    background:#B91C1C;
+}
+
+.complete-btn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.complete-btn:hover{
+
+    background:#1D4ED8;
+}

@@ -1,0 +1,203 @@
+.navbar{
+    width:100%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.navbar-container{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    color:#D32F2F;
+
+    font-size:24px;
+
+    font-weight:700;
+}
+
+.logo-icon{
+
+    font-size:26px;
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:32px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+
+    color:#D32F2F;
+}
+
+.nav-buttons{
+
+    display:flex;
+
+    gap:15px;
+}
+
+.btn-outline{
+
+    border:2px solid #D32F2F;
+
+    color:#D32F2F;
+
+    padding:10px 24px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-outline:hover{
+
+    background:#D32F2F;
+
+    color:white;
+}
+
+.btn-primary{
+
+    background:#D32F2F;
+
+    color:white;
+
+    padding:10px 24px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+
+    background:#C62828;
+}
+
+.navbar-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+.notification-icon{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    color:#444;
+}
+
+.avatar{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#D32F2F;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:700;
+    font-size:20px;
+
+    text-decoration:none;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.avatar:hover{
+    background:#B71C1C;
+    transform:scale(1.05);
+}
+
+.logout-btn{
+
+    background:#D32F2F;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.logout-btn:hover{
+
+    background:#C62828;
+}
+
+@media(max-width:992px){
+
+.nav-links{
+
+    display:none;
+}
+
+.nav-buttons{
+
+    gap:10px;
+}
+
+}

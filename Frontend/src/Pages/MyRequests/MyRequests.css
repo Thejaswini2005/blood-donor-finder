@@ -1,0 +1,107 @@
+.requests-page{
+    background:#FFF5F5;
+    min-height:100vh;
+    padding:40px 0;
+}
+
+.requests-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.requests-container h1{
+    margin-bottom:30px;
+}
+
+.requests-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+    gap:25px;
+}
+
+.request-card{
+    background:#fff;
+    border-radius:15px;
+    padding:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.request-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.status{
+
+    display:inline-block;
+
+    padding:7px 16px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:capitalize;
+}
+
+/* Pending */
+
+.status.pending{
+
+    background:#FFF3CD;
+
+    color:#856404;
+}
+
+/* In Progress */
+
+.status.in-progress{
+
+    background:#D1ECF1;
+
+    color:#0C5460;
+}
+
+/* Accepted */
+
+.status.accepted{
+
+    background:#D4EDDA;
+
+    color:#155724;
+}
+
+/* Rejected */
+
+.status.rejected{
+
+    background:#F8D7DA;
+
+    color:#721C24;
+}
+
+.delete-btn{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#d32f2f;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.delete-btn:hover{
+    background:#b71c1c;
+}
+
+.empty-state{
+    text-align:center;
+    padding:60px 20px;
+}

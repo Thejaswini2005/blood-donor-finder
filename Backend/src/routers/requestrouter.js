@@ -9,11 +9,17 @@ const {
     getAllRequests,
     updateRequestStatus,
     deleteRequest,
+    getDonorRequests,
 } = require("../controllers/requestcontroller");
 
 // Protected Routes
 router.post("/", authMiddleware, createRequest);
 router.get("/my", authMiddleware, getMyRequests);
+router.get(
+    "/donor",
+    authMiddleware,
+    getDonorRequests
+);
 
 // Public/Admin Routes
 router.get("/", getAllRequests);

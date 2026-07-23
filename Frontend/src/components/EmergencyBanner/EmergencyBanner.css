@@ -1,0 +1,135 @@
+.emergency-banner{
+    padding:80px 0;
+    background:#FFF5F5;
+}
+
+.banner-container{
+
+    width:90%;
+    max-width:1250px;
+
+    margin:auto;
+
+    background:linear-gradient(135deg,#D32F2F,#EF5350);
+
+    border-radius:24px;
+
+    padding:45px 55px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(211,47,47,.25);
+}
+
+.banner-content{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.banner-icon{
+
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:36px;
+}
+
+.banner-content h2{
+
+    font-size:38px;
+
+    margin-bottom:10px;
+}
+
+.banner-content p{
+
+    max-width:550px;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.9);
+}
+
+.banner-btn{
+
+    background:white;
+
+    color:#D32F2F;
+
+    border:none;
+
+    padding:16px 34px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.banner-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#FFEAEA;
+}
+
+@media(max-width:900px){
+
+.banner-container{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:30px;
+
+    padding:35px;
+}
+
+.banner-content{
+
+    flex-direction:column;
+}
+
+}
+
+@media(max-width:600px){
+
+.banner-content h2{
+
+    font-size:30px;
+}
+
+.banner-icon{
+
+    width:65px;
+    height:65px;
+
+    font-size:28px;
+}
+
+.banner-btn{
+
+    width:100%;
+}
+
+}

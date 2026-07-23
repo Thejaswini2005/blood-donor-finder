@@ -1,0 +1,28 @@
+.find-donors-page{
+    background:#FFF5F5;
+    min-height:100vh;
+    padding:40px 0;
+}
+
+.find-container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+.find-container h1{
+    margin-bottom:30px;
+    color:#222;
+}
+
+.donors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+@media (max-width: 900px) {
+    .donors-grid {
+        grid-template-columns: 1fr;
+    }
+}

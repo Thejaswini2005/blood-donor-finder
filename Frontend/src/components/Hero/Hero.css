@@ -1,0 +1,243 @@
+.hero {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(180deg, #FFF5F5 0%, #FFFFFF 100%);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-tag {
+    display: inline-block;
+    color: #D32F2F;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: #D32F2F;
+}
+
+.hero-content p {
+    max-width: 550px;
+    color: #666;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* ===========================
+   HERO BUTTONS
+=========================== */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+}
+
+.primary-btn,
+.secondary-btn {
+
+    width: 180px;
+    height: 56px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Primary */
+
+.primary-btn {
+
+    background: #D32F2F;
+    color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+
+    background: #C62828;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(211,47,47,.25);
+}
+
+/* Secondary */
+
+.secondary-btn {
+
+    background: white;
+    color: #D32F2F;
+
+    border: 2px solid #D32F2F;
+}
+
+.secondary-btn:hover {
+
+    background: #D32F2F;
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(211,47,47,.25);
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.hero-image {
+
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.image-bg {
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    background: rgba(211,47,47,.08);
+
+    border-radius: 50%;
+
+    z-index: 1;
+}
+
+.hero-image img {
+
+    width: 100%;
+    max-width: 600px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero-container{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:40px;
+
+    padding:50px 0;
+}
+
+.hero-content h1{
+
+    font-size:52px;
+}
+
+.hero-content p{
+
+    max-width:100%;
+}
+
+.hero-buttons{
+
+    justify-content:center;
+}
+
+.image-bg{
+
+    width:380px;
+    height:380px;
+}
+
+.hero-image img{
+
+    max-width:420px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-content h1{
+
+    font-size:40px;
+}
+
+.hero-content p{
+
+    font-size:17px;
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:220px;
+}
+
+.image-bg{
+
+    width:300px;
+    height:300px;
+}
+
+.hero-image img{
+
+    max-width:320px;
+}
+
+}
